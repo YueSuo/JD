@@ -75,6 +75,16 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="14dp"
+                    android:text="11"
+                    android:gravity="center"
+                    android:textSize="10sp"
+                    android:textColor="#f13b3b"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/gouwuche"
+                    android:layout_height="14dp" />
                 <ImageView
                     android:layout_width="18dp"
                     android:layout_marginTop="16dp"
@@ -299,17 +309,13 @@
                 android:layout_height="40dp">
                 <TextView
                     android:layout_width="match_parent"
-                    android:text="【下单立减789，成交价8999元】勾选[保障服务][原厂保2年]，原厂延保更安心。更多活动猛戳"
+                    android:id="@+id/sy_string"
+                    android:text="@string/lianjie"
                     android:textColor="#ec4141"
                     android:textSize="12sp"
                     android:gravity="center_vertical"
                     android:layout_height="match_parent" />
-                <Button
-                    android:layout_width="74dp"
-                    android:background="#ec4141"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginLeft="85dp"
-                    android:layout_height="1dp" />
+
             </RelativeLayout>
 
             <RelativeLayout
@@ -553,37 +559,34 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_weight="1"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="14dp"
                     android:text="已选"
                     android:textSize="12sp"
-                    android:layout_height="match_parent" />
+                    android:layout_height="wrap_content" />
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_weight="10"
                     android:orientation="vertical"
                     android:layout_height="match_parent">
-                    <LinearLayout
+                    <RelativeLayout
                         android:layout_width="match_parent"
-                        android:orientation="horizontal"
                         android:layout_weight="2"
                         android:layout_height="0dp">
                         <TextView
-                            android:layout_width="0dp"
-                            android:layout_weight="8"
-                            android:layout_gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
                             android:text="深空灰色，公开版，256GB，官方标配，1件，保障服务"
                             android:textColor="#000000"
                             android:textSize="12sp"
                             android:layout_height="wrap_content" />
                         <ImageView
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:layout_gravity="top"
-                            android:layout_marginTop="10dp"
-                            android:src="@mipmap/duo"
+                            android:layout_width="18dp"
                             android:layout_alignParentRight="true"
+                            android:layout_marginTop="14dp"
+                            android:src="@mipmap/duo"
                             android:layout_height="18dp" />
-                    </LinearLayout>
+                    </RelativeLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:orientation="horizontal"

@@ -1,6 +1,7 @@
 package com.example.sy.jd_sy;
 
 import android.app.Activity;
+import android.app.SearchableInfo;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -15,14 +16,14 @@ import android.widget.TextView;
  */
 
 public class JdActivity extends Activity {
-    private TextView textView;
+    private TextView textView1;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_jd);
 
-        textView = findViewById(R.id.sy_text);
-        String string = textView.getText().toString();
+        textView1 = findViewById(R.id.sy_text);
+        String string = textView1.getText().toString();
 
         int b = string.indexOf("自营");
         int i = b + "自营".length();
@@ -30,6 +31,7 @@ public class JdActivity extends Activity {
         spannableStringBuilder.setSpan(new BackgroundColorSpan(Color.RED),b,i, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
         spannableStringBuilder.setSpan(new ForegroundColorSpan(Color.WHITE),b,i, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
 
-        textView.setText(spannableStringBuilder);
+        textView1.setText(spannableStringBuilder);
+
     }
 }
