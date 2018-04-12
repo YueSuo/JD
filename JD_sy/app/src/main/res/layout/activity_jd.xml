@@ -43,7 +43,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:text="商品"
-                        android:textSize="14sp" />
+                        android:textSize="16sp" />
                     <Button
                         android:layout_width="30dp"
                         android:background="#000000"
@@ -59,7 +59,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:text="详情"
-                    android:textSize="14sp" />
+                    android:textSize="16sp" />
                 <TextView
                     android:layout_width="0dp"
                     android:layout_weight="1"
@@ -69,7 +69,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:text="评价"
-                    android:textSize="14sp" />
+                    android:textSize="16sp" />
             </LinearLayout>
             <RelativeLayout
                 android:layout_width="0dp"
@@ -86,19 +86,19 @@
                     android:background="@drawable/gouwuche"
                     android:layout_height="14dp" />
                 <ImageView
-                    android:layout_width="18dp"
+                    android:layout_width="24dp"
                     android:layout_marginTop="16dp"
                     android:src="@mipmap/duo"
                     android:id="@+id/sy_duo"
                     android:layout_alignParentRight="true"
-                    android:layout_height="18dp" />
+                    android:layout_height="24dp" />
                 <ImageView
-                    android:layout_width="18dp"
+                    android:layout_width="24dp"
                     android:layout_marginTop="16dp"
                     android:layout_toLeftOf="@+id/sy_duo"
                     android:layout_marginRight="10dp"
                     android:src="@mipmap/fenx"
-                    android:layout_height="18dp" />
+                    android:layout_height="24dp" />
             </RelativeLayout>
         </LinearLayout>
 
@@ -339,7 +339,7 @@
                     android:textColor="#7e7b7b"
                     android:background="@drawable/jiangjia"
                     android:layout_alignParentRight="true"
-                    android:layout_height="24dp" />
+                    android:layout_height="20dp" />
             </RelativeLayout>
 
             <LinearLayout
@@ -423,6 +423,7 @@
                         android:layout_height="0dp">
                         <TextView
                             android:layout_width="wrap_content"
+                            android:padding="2dp"
                             android:text="满送"
                             android:layout_centerInParent="true"
                             android:textColor="#f24f4f"
@@ -456,6 +457,7 @@
 
                         <TextView
                             android:id="@+id/sy_fanquan"
+                            android:padding="2dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
@@ -481,6 +483,7 @@
                         android:layout_height="0dp">
                         <TextView
                             android:id="@+id/sy_taozhuang"
+                            android:padding="2dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
@@ -612,6 +615,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:background="#ffffff"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
                 android:paddingLeft="8dp"
                 android:paddingRight="8dp"
                 android:layout_marginTop="10dp"
@@ -705,8 +710,10 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:orientation="vertical"
+                android:paddingTop="3dp"
                 android:paddingLeft="8dp"
                 android:paddingRight="8dp"
+                android:paddingBottom="3dp"
                 android:background="#f4f3f3"
                 android:layout_height="40dp">
                 <LinearLayout
@@ -830,6 +837,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_marginTop="10dp"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
                 android:paddingLeft="8dp"
                 android:paddingRight="8dp"
                 android:background="#ffffff"
@@ -1076,6 +1085,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
+                android:layout_marginTop="1dp"
                 android:background="#ffffff"
                 android:paddingLeft="8dp"
                 android:paddingRight="8dp"
@@ -1221,6 +1231,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
+                android:layout_marginTop="1dp"
                 android:background="#ffffff"
                 android:paddingLeft="8dp"
                 android:paddingRight="8dp"
@@ -1396,6 +1407,7 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
+                android:layout_marginTop="1dp"
                 android:background="#ffffff"
                 android:paddingLeft="8dp"
                 android:paddingRight="8dp"
@@ -1427,6 +1439,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:orientation="vertical"
+                android:layout_marginTop="1dp"
                 android:paddingLeft="8dp"
                 android:paddingRight="8dp"
                 android:background="#ffffff"
@@ -1492,6 +1505,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:background="#ffffff"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
                 android:paddingLeft="8dp"
                 android:paddingRight="8dp"
                 android:layout_marginTop="10dp"
@@ -1679,16 +1694,15 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:background="#ffffff"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp"
                 android:layout_marginTop="10dp"
                 android:orientation="horizontal"
                 android:layout_height="40dp">
                 <TextView
                     android:layout_width="0dp"
                     android:layout_weight="1"
+                    android:background="#ffffff"
                     android:text="为你推荐"
+                    android:layout_marginRight="1dp"
                     android:textColor="#e94141"
                     android:gravity="center"
                     android:textSize="12sp"
@@ -1696,6 +1710,7 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_weight="1"
+                    android:background="#ffffff"
                     android:text="排行榜"
                     android:gravity="center"
                     android:textSize="12sp"
@@ -1704,6 +1719,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
+                android:paddingTop="2dp"
                 android:background="#ffffff"
                 android:paddingLeft="8dp"
                 android:paddingRight="8dp"
@@ -1804,6 +1820,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:background="#ffffff"
+                android:paddingTop="2dp"
                 android:paddingLeft="8dp"
                 android:paddingRight="8dp"
                 android:orientation="horizontal"
